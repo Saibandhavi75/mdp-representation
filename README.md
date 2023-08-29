@@ -9,14 +9,18 @@ To represent any one real-world problem in MDP form.
 To develop a AI agent which controls the level of fluoride percentage in water.
 
 ### State Space
-{a,b,c} -> {0,1,2}
-where
-a->LOWER than required
-b->CORRECT amount
-c->HIGHER than required
+{A,B,C} -> {0,1,2}
+
+where,
+
+A->LOWER than required
+
+B->CORRECT amount
+
+C->HIGHER than required
 
 ### Sample State
-a->0-lower than required
+A->0-lower than required
 
 ### Action Space
 {H,L} -> {0,1}
@@ -24,18 +28,22 @@ a->0-lower than required
 where,
 
 H -> higher the fluoride percent
+
 L ->  higher the fluoride percent
 
 ### Sample Action
 H -> 0
+
 which means we have to increase the fluoride percent in water
 
 ### Reward Function
 R = { +1 , for correct amount of fluoride
+
        0 , otherwise
 
 ### Graphical Representation
-Write your answer here
+![image](https://github.com/Saibandhavi75/mdp-representation/assets/94208895/2a5d6936-b432-4efb-9f8d-d5c7b441b600)
+
 
 ## PYTHON REPRESENTATION:
 ```
