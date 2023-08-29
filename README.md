@@ -4,8 +4,6 @@
 To represent any one real-world problem in MDP form.
 
 ## PROBLEM STATEMENT:
-
-### Problem Description
 To develop a AI agent which controls the level of fluoride percentage in water.
 
 ### State Space
