@@ -37,9 +37,10 @@ H -> 0
 which means we have to increase the fluoride percent in water
 
 ### Reward Function
+```
 R = { +1 , for correct amount of fluoride
        0 , otherwise
-
+```
 ### Graphical Representation
 ![image](https://github.com/Saibandhavi75/mdp-representation/assets/94208895/2a5d6936-b432-4efb-9f8d-d5c7b441b600)
 
