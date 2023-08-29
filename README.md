@@ -6,38 +6,61 @@ To represent any one real-world problem in MDP form.
 ## PROBLEM STATEMENT:
 
 ### Problem Description
-Write your answer here
+To develop a AI agent which controls the level of fluoride percentage in water.
 
 ### State Space
 {a,b,c} -> {0,1,2}
 where
-a->Good health
-b->fair health
-c->poor health
+a->LOWER than required
+b->CORRECT amount
+c->HIGHER than required
 
 ### Sample State
-a->0->Good health
+a->0-lower than required
 
 ### Action Space
-{Ta,Tb}->{0,1}
-Ta-treatment A
-Tb->treatment B
+{H,L} -> {0,1}
+
+where,
+
+H -> higher the fluoride percent
+L ->  higher the fluoride percent
 
 ### Sample Action
-Write your answer here
+H -> 0
+which means we have to increase the fluoride percent in water
 
 ### Reward Function
-Write your answer here
+R = { +1 , for correct amount of fluoride
+       0 , otherwise
 
 ### Graphical Representation
 Write your answer here
 
 ## PYTHON REPRESENTATION:
-Write your code here
+```
+P = {
+    0 : {
+        0 : [(1.0, 1, 1.0, True)],
+        1 : [(1.0, 0, 0.0, False)]
+    },
+    1 : {
+        0 : [(1.0, 2, 0.0, False)],
+        1 : [(1.0, 0, 0.0, False)]
+    },
+    2 : {
+        0 : [(1.0, 2, 0.0, False)],
+        1 : [(1.0, 1, 1.0, True)]
+    }
+}
+
+P
+```
 
 ## OUTPUT:
-Write your Python output here
+![image](https://github.com/Saibandhavi75/mdp-representation/assets/94208895/aed4bc06-883c-4cfe-87e3-fcdb294d2b52)
+
 
 ## RESULT:
-Write your output here
+Thus the given real world problem is successfully represented in a MDP form .
 
